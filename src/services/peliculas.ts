@@ -2,7 +2,7 @@ import type { RespuestaPeliculas } from '../types/Pelicula'
 
 export async function buscarPeliculas(termino: string): Promise<RespuestaPeliculas> {
 
-    const url = `https://www.omdbapi.com/?s=${termino}&apikey=21132962`
+    const url = `https://www.omdbapi.com/?s=${termino}&apikey=***`
 
     const responde = await fetch(url)
     if (!responde.ok) {

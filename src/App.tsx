@@ -15,6 +15,7 @@ function App() {
 
     try {
       setLoading(true)
+      setError("")
       setPeliculas([])
       const resultado = await buscarPeliculas(termino)   
       setPeliculas(resultado.Search)
